@@ -1,0 +1,14 @@
+
+server:
+  servlet:
+    context-path: /base
+  port: 8083
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
